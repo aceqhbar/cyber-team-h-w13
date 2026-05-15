@@ -37,7 +37,7 @@ ping 10.0.2.15
 - Kali получила IP `10.0.2.15`
 - ping проходил успешно
 
-![1](images/1.jpg)
+![1](images/1.png)
 
 ---
 
@@ -66,7 +66,7 @@ $client.Close()
 
 Payload создаёт TCP соединение с Kali listener и позволяет выполнять команды удалённо через PowerShell.
 
-![2](images/2.jpg)
+![2](images/2.png)
 
 ---
 
@@ -90,7 +90,7 @@ Test-NetConnection 10.0.2.15 -Port 4444
 - TCP соединение успешно устанавливалось
 - listener принимал подключение
 
-![3](images/3.jpg)
+![3](images/3.png)
 
 ---
 
@@ -104,7 +104,7 @@ powershell -ExecutionPolicy Bypass -file .\Desktop\shell.ps1
 
 После запуска Kali listener получил callback от Windows VM.
 
-![4](images/4.jpg)
+![4](images/4.png)
 
 ---
 
@@ -128,7 +128,7 @@ ipconfig
 desktop-krkd4ge\user
 ```
 
-![5](images/5.jpg)
+![5](images/5.png)
 
 ---
 
@@ -150,7 +150,7 @@ reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v WinUpdate /t REG_S
 
 После reboot Windows listener на Kali снова получил callback, что подтвердило работу persistence.
 
-![6](images/6.jpg)
+![6](images/6.png)
 
 ---
 
@@ -166,7 +166,7 @@ reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v WinUpdate /t REG_S
 
 Это показывает, что PowerShell activity оставляет forensic traces даже без использования admin privileges.
 
-![7](images/7.jpg)
+![7](images/7.png)
 
 ---
 
@@ -188,7 +188,7 @@ reg query HKCU\Software\Microsoft\Windows\CurrentVersion\Run
 
 Ключ persistence больше не отображался.
 
-![8](images/8.jpg)
+![8](images/8.png)
 
 ---
 
