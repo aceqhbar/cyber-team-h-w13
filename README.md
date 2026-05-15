@@ -1,4 +1,3 @@
-````markdown
 # Windows Reverse Shell Lab (Kali → Windows)
 
 ## Цель работы
