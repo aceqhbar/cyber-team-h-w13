@@ -53,7 +53,7 @@ Sysmon (System Monitor) — инструмент Microsoft Sysinternals, кот�
 dir C:\Sysmon
 ```
 
-![11](images1/11.png)
+![11](images1/11.jpg)
 
 ---
 
@@ -63,7 +63,7 @@ dir C:\Sysmon
 Get-Service Sysmon64
 ```
 
-![12](images1/12.png)
+![12](images1/12.jpg)
 
 ---
 
@@ -131,7 +131,7 @@ dir C:\sysmon-config
 C:\Sysmon\Sysmon64.exe -c C:\sysmon-config\sysmonconfig-export.xml
 ```
 
-![13](images1/13.png)
+![13](images1/13.jpg)
 
 ---
 
@@ -154,7 +154,7 @@ Configuration updated.
 - расширенные Process Creation events;
 - дополнительные forensic artifacts.
 
-![14](images1/14.png)
+![14](images1/14.jpg)
 
 ---
 
@@ -185,7 +185,7 @@ notepad
 calc
 ```
 
-![15](images1/15.png)
+![15](images1/15.jpg)
 
 ---
 
@@ -198,7 +198,7 @@ Image:
 C:\Windows\System32\whoami.exe
 ```
 
-![17](images1/17.png)
+![17](images1/17.jpg)
 
 ---
 
@@ -262,7 +262,7 @@ QueryName:
 google.com
 ```
 
-![16](images1/16.png)
+![16](images1/16.jpg)
 
 ---
 
@@ -300,7 +300,7 @@ Sysmon показывает:
 - пользователя;
 - timestamp события.
 
-![18](images1/18.png)
+![18](images1/18.jpg)
 
 ---
 
@@ -347,7 +347,7 @@ while ($true) {
 }
 ```
 
-![7](images1/7.png)
+![7](images1/7.jpg)
 
 ---
 
@@ -357,7 +357,7 @@ while ($true) {
 powershell -ExecutionPolicy Bypass -File C:\monitor\monitor.ps1
 ```
 
-![1](images1/1.png)
+![1](images1/1.jpg)
 
 ---
 
@@ -367,7 +367,7 @@ powershell -ExecutionPolicy Bypass -File C:\monitor\monitor.ps1
 dir C:\monitor
 ```
 
-![2](images1/2.png)
+![2](images1/2.jpg)
 
 ---
 
@@ -377,7 +377,7 @@ dir C:\monitor
 type C:\monitor\process_log.txt
 ```
 
-![6](images1/6.png)
+![6](images1/6.jpg)
 
 ---
 
@@ -389,7 +389,7 @@ type C:\monitor\process_log.txt
 Administrator access is needed to install a service.
 ```
 
-![3](images1/3.png)
+![3](images1/3.jpg)
 
 ---
 
@@ -407,7 +407,7 @@ MonitorService
 
 Сервис был успешно установлен через NSSM.
 
-![4](images1/4.png)
+![4](images1/4.jpg)
 
 ---
 
@@ -419,7 +419,7 @@ MonitorService
 Get-Service MonitorService
 ```
 
-![5](images1/5.png)
+![5](images1/5.jpg)
 
 ---
 
@@ -434,7 +434,7 @@ while ($true) {
 }
 ```
 
-![8](images1/8.png)
+![8](images1/8.jpg)
 
 ---
 
@@ -452,7 +452,7 @@ Restart-Service MonitorService
 type C:\monitor\netlog.txt
 ```
 
-![9](images1/9.png)
+![9](images1/9.jpg)
 
 ---
 
@@ -464,7 +464,7 @@ type C:\monitor\netlog.txt
 Event ID 4104
 ```
 
-![10](images1/10.png)
+![10](images1/10.jpg)
 
 ---
 
@@ -502,7 +502,7 @@ C:\monitor\nssm.exe remove MonitorService confirm
 nssme.exe
 ```
 
-![19](images1/19.png)
+![19](images1/19.jpg)
 
 ---
 
@@ -568,7 +568,7 @@ Cannot find any service with service name 'MonitorService'
 Event ID 7045
 ```
 
-![20](images1/20.png)
+![20](images1/20.jpg)
 
 ---
 
